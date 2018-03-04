@@ -1,7 +1,7 @@
 #!/bin/sh
-export PATH=$PATH:/root/.nvm/versions/node/v8.9.4/bin
 
 ssh root@10.8.204.133 << EOF
+  export PATH=$PATH:/root/.nvm/versions/node/v8.9.4/bin
   cd ~/hello-jenkins
   git pull
   npm install --production
