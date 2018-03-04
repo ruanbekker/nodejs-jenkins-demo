@@ -5,6 +5,7 @@ ssh root@10.8.204.133 << EOF
   cd ~/hello-jenkins
   git pull
   npm install --production
-  forever restartall
+  forever stopall
+  forever start app.js
   exit
 EOF
